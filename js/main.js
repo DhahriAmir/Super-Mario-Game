@@ -3,7 +3,6 @@ function createImage(imgSrc) {
   img.src = imgSrc;
   return img;
 }
-console.log(createImage("../sprites/background.png"));
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 canvas.width = 1024;
