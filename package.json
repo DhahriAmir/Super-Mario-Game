@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"serve ./",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve ./",
+    "test": "jest"
   },
   "author": "Amir Dhhari",
   "license": "ISC",
   "dependencies": {
     "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
