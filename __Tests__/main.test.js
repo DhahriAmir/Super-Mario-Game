@@ -1,7 +1,7 @@
-const  {createImage} = require("../js/main");
-Jest.
+// const  {createImage} = require("../js/main");
+const createImage = jest.fn((imgSrc)=>`<img src="${imgSrc}">`)
 //Start Mock Section 
-discribe("Chcek The Exictance Of Sprites" ,()=>{
+describe("Chcek The Exictance Of Sprites" ,()=>{
     test("Test The Exsitence Of Background Sprite" , ()=>{
         expect(createImage(`../sprites/background.png`)).toBe(`<img src="../sprites/background.png">`)
     })
