@@ -1,5 +1,6 @@
 const  {createImage} = require("../js/main");
-
+Jest.
+//Start Mock Section 
 discribe("Chcek The Exictance Of Sprites" ,()=>{
     test("Test The Exsitence Of Background Sprite" , ()=>{
         expect(createImage(`../sprites/background.png`)).toBe(`<img src="../sprites/background.png">`)
@@ -17,3 +18,4 @@ discribe("Chcek The Exictance Of Sprites" ,()=>{
         expect(createImage(`../sprites/spriteRunLeft.png`)).toBe(`<img src="../sprites/spriteRunLeft.png">`)
     })
 })
+//End Mock Section 
