@@ -1,21 +1,21 @@
 // const  {createImage} = require("../js/main");
-const createImage = jest.fn((imgSrc)=>`<img src="${imgSrc}">`)
+const mockCreateImage = jest.fn((imgSrc)=>`<img src="${imgSrc}">`)
 //Start Mock Section 
 describe("Chcek The Exictance Of Sprites" ,()=>{
     test("Test The Exsitence Of Background Sprite" , ()=>{
-        expect(createImage(`../sprites/background.png`)).toBe(`<img src="../sprites/background.png">`)
+        expect(mockCreateImage(`../sprites/background.png`)).toBe(`<img src="../sprites/background.png">`)
     })
     test("Test The Exsitence Of spriteStandRight Sprite" , ()=>{
-        expect(createImage(`../sprites/spriteStandRight.png`)).toBe(`<img src="../sprites/spriteStandRight.png">`)
+        expect(mockCreateImage(`../sprites/spriteStandRight.png`)).toBe(`<img src="../sprites/spriteStandRight.png">`)
     })
     test("Test The Exsitence Of spriteStandLeft Sprite" , ()=>{
-        expect(createImage(`../sprites/spriteStandLeft.png`)).toBe(`<img src="../sprites/spriteStandLeft.png">`)
+        expect(mockCreateImage(`../sprites/spriteStandLeft.png`)).toBe(`<img src="../sprites/spriteStandLeft.png">`)
     })
     test("Test The Exsitence Of spriteRunRight Sprite" , ()=>{
-        expect(createImage(`../sprites/spriteRunRight.png`)).toBe(`<img src="../sprites/spriteRunRight.png">`)
+        expect(mockCreateImage(`../sprites/spriteRunRight.png`)).toBe(`<img src="../sprites/spriteRunRight.png">`)
     })
     test("Test The Exsitence Of spriteRunLeft Sprite" , ()=>{
-        expect(createImage(`../sprites/spriteRunLeft.png`)).toBe(`<img src="../sprites/spriteRunLeft.png">`)
+        expect(mockCreateImage(`../sprites/spriteRunLeft.png`)).toBe(`<img src="../sprites/spriteRunLeft.png">`)
     })
 })
 //End Mock Section 

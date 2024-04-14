@@ -308,4 +308,4 @@ addEventListener("keyup", ({ keyCode }) => {
       break;
   }
 });
-module.exports.createImage = createImage
+module.exports = createImage
